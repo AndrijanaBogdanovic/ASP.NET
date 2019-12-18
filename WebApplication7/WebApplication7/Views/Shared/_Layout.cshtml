@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Road Trip by TEMPLATED
+    templated.co 
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>Rasadnik cveća</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/main.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link runat="server" href="~/ikonica.jpg" rel="shortcut icon" type="image/x-icon"/>
+    <link  runat="server" href="~/ikonica.jpg" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo"><a href="index.html">Rasadnik cveća</a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="#">Pocetna</a></li>
+            <li><a href="#one">Četinari</a></li>
+            <li><a href="#two">Cveće</a></li>
+            <li><a href="#three">Novogodišnje jelke</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <!--
+        Note: To show a background image, set the "data-bg" attribute below
+        to the full filename of your image. This is used in each section to set
+        the background image.
+    -->
+    <section id="banner" class="bg-img" data-bg="slika1.jpg">
+        <div class="inner">
+            <header>
+                <h1>Želite da vaše dvorište postane jos lepše i šarenije</h1>
+                <h3>na pravom ste mestu</h3>
+            </header>
+        </div>
+        <a href="#one" class="more">Learn More</a>
+    </section>
+
+    
+    @RenderBody();
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+
+            <h2>Kontaktirajte nas</h2>
+
+            <form action="#" method="post">
+
+                <div class="field half first">
+                    <label for="name">Ime</label>
+                    <input name="name" id="name" type="text" placeholder="Ime">
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="Email">
+                </div>
+                <div class="field">
+                    <label for="message">Poruka</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Poruka"></textarea>
+                </div>
+                <ul class="actions">
+                    <li><input value="Pošalji" class="button alt" type="submit"></li>
+                </ul>
+            </form>
+
+            <ul class="icons">
+                <li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+
+            <div class="copyright">
+                &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+            </div>
+
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!-- Scripts -->
+    <script src="~/Scripts/jquery.scrollex.min.js"></script>
+    <script src="~/Scripts/jquery.scrolly.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>
